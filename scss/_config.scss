@@ -1,0 +1,19 @@
+// variables
+$font: "Lora", serif;
+$font-logo: "Dancing Script", cursive;
+$website-width: 1280px;
+$main-color: #caadff;
+$light-color: #ffceff;
+$medium-color: #e0cefd;
+$dark-color: #333;
+$progress-color: #af99ff;
+$bg-image: url("../img/showcase.jpg");
+
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #333;
+  } @else {
+    @return white;
+  }
+}
